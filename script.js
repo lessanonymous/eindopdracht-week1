@@ -20,7 +20,7 @@ const changeColorName = target => {
 };
 const handleListItemEvent = (e, target) => {
     changeActiveListItem(target);
-    if (e.type === 'click') toggleNav(target);
+    if (e.type === 'click' || nav.className === 'slide') toggleNav(target);
     changeBackgroundColor(target);
     changeColorName(target);
 };
@@ -35,7 +35,6 @@ const handleKeyEvent = e => {
     if (validKeys.includes(e.key)) {
         if (e.key === '1') {
             document.querySelector('.home') ? target = document.querySelector('.home') : target = document.querySelector('.home-active');
-            console.log(target);
         } else if (e.key === '2') {
             document.querySelector('.red') ? target = document.querySelector('.red') : target = document.querySelector('.red-active');
         } else if (e.key === '3') {
