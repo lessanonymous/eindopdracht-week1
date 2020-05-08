@@ -33,15 +33,7 @@ const handleKeyEvent = e => {
     const validKeys = ['1', '2', '3', '4'];
     let target;
     if (validKeys.includes(e.key)) {
-        if (e.key === '1') {
-            document.querySelector('.nav li:nth-child(1)') ? target = document.querySelector('.nav li:nth-child(1)') : target = document.querySelector('.home-active');
-        } else if (e.key === '2') {
-            document.querySelector('.nav li:nth-child(2)') ? target = document.querySelector('.nav li:nth-child(2)') : target = document.querySelector('.red-active');
-        } else if (e.key === '3') {
-            document.querySelector('.nav li:nth-child(3)') ? target = document.querySelector('.nav li:nth-child(3)') : target = document.querySelector('.green-active');
-        } else {
-            document.querySelector('.nav li:nth-child(4)') ? target = document.querySelector('.nav li:nth-child(4)') : target = document.querySelector('.blue-active');
-        }
+        target = document.querySelector(`.nav li:nth-child(${e.key})`);
         handleListItemEvent(e, target);
     }
 
