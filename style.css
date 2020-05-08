@@ -23,6 +23,8 @@ nav {
     padding: 0;
     width: 300px;
     border: black solid 1px;
+    background-color: white;
+    color: black;
 }
 
 .slide {
@@ -34,44 +36,20 @@ nav {
     padding: 1em;
 }
 
-.home {
-    background-color: white;
+.home-active {
     color: gray;
 }
 
-.red {
-    background-color: white;
+.red-active {
     color: red;
 }
 
-.green {
-    background-color: white;
+.green-active {
     color: green;
 }
 
-.blue {
-    background-color: white;
-    color: blue;
-}
-
-.home-active {
-    background-color: gray;
-    color: white;
-}
-
-.red-active {
-    background-color: red;
-    color: white;
-}
-
-.green-active {
-    background-color: green;
-    color: white;
-}
-
 .blue-active {
-    background-color: blue;
-    color: white;
+    color: blue;
 }
 
 .home-bg {

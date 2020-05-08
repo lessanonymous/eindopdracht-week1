@@ -34,13 +34,13 @@ const handleKeyEvent = e => {
     let target;
     if (validKeys.includes(e.key)) {
         if (e.key === '1') {
-            document.querySelector('.home') ? target = document.querySelector('.home') : target = document.querySelector('.home-active');
+            document.querySelector('.nav li:nth-child(1)') ? target = document.querySelector('.nav li:nth-child(1)') : target = document.querySelector('.home-active');
         } else if (e.key === '2') {
-            document.querySelector('.red') ? target = document.querySelector('.red') : target = document.querySelector('.red-active');
+            document.querySelector('.nav li:nth-child(2)') ? target = document.querySelector('.nav li:nth-child(2)') : target = document.querySelector('.red-active');
         } else if (e.key === '3') {
-            document.querySelector('.green') ? target = document.querySelector('.green') : target = document.querySelector('.green-active');
+            document.querySelector('.nav li:nth-child(3)') ? target = document.querySelector('.nav li:nth-child(3)') : target = document.querySelector('.green-active');
         } else {
-            document.querySelector('.blue') ? target = document.querySelector('.blue') : target = document.querySelector('.blue-active');
+            document.querySelector('.nav li:nth-child(4)') ? target = document.querySelector('.nav li:nth-child(4)') : target = document.querySelector('.blue-active');
         }
         handleListItemEvent(e, target);
     }
