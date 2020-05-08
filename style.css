@@ -1,0 +1,99 @@
+html, body {
+    margin: 0;
+}
+
+header {
+    padding: .5em;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+nav {
+    position: relative;
+    left: -999px;
+    transition: 1s;
+}
+
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    border: black solid 1px;
+}
+
+.slide {
+    left: 0px;
+}
+
+.nav li {
+    text-align: center;
+    padding: 1em;
+}
+
+.home {
+    background-color: white;
+    color: gray;
+}
+
+.red {
+    background-color: white;
+    color: red;
+}
+
+.green {
+    background-color: white;
+    color: green;
+}
+
+.blue {
+    background-color: white;
+    color: blue;
+}
+
+.home-active {
+    background-color: gray;
+    color: white;
+}
+
+.red-active {
+    background-color: red;
+    color: white;
+}
+
+.green-active {
+    background-color: green;
+    color: white;
+}
+
+.blue-active {
+    background-color: blue;
+    color: white;
+}
+
+.home-bg {
+    background-color: gray;
+    color: white;
+}
+
+.red-bg {
+    background-color: red;
+    color: white;
+}
+
+.green-bg {
+    background-color: green;
+    color: white;
+}
+
+.blue-bg {
+    background-color: blue;
+    color: white;
+}
+
+.hidden {
+    visibility: hidden;
+}
