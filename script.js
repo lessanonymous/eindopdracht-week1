@@ -29,12 +29,10 @@ const handleListItemClick = e => {
 };
 const handleKeyEvent = e => {
     const validKeys = ['1', '2', '3', '4'];
-    let target;
     if (validKeys.includes(e.key)) {
-        target = document.querySelector(`.nav li:nth-child(${e.key})`);
+        const target = document.querySelector(`.nav li:nth-child(${e.key})`);
         handleListItemEvent(e, target);
     }
-
 };
 // add eventListeners to elements
 hamburger.addEventListener('click', toggleNav);
