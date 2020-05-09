@@ -8,10 +8,10 @@ const toggleNav = () => {
     nav.classList.toggle('hidden');
     nav.classList.toggle('slide');
 };
-const changeBackgroundColor = target => document.body.classList = `${target.innerHTML.toLowerCase()}-bg`;
+const changeBackgroundColor = target => document.body.className = `${target.innerHTML.toLowerCase()}-bg`;
 const changeActiveListItem = target => {
-    listItems.forEach(item => item.classList = item.innerHTML.toLowerCase());
-    target.classList = `${target.innerHTML.toLowerCase()}-active`;
+    listItems.forEach(item => item.className = '');
+    target.className = `${target.innerHTML.toLowerCase()}-active`;
 };
 const changeColorName = target => {
     const colorName = target.innerHTML;
