@@ -3,7 +3,6 @@ const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('nav');
 const listItems = document.querySelectorAll('.nav li');
 const h1 = document.querySelector('h1');
-
 // eventHandlers
 const toggleNav = () => {
     nav.classList.toggle('hidden');
@@ -28,7 +27,6 @@ const handleListItemClick = e => {
     const target = e.target;
     handleListItemEvent(e, target);
 };
-
 const handleKeyEvent = e => {
     const validKeys = ['1', '2', '3', '4'];
     let target;
@@ -38,7 +36,6 @@ const handleKeyEvent = e => {
     }
 
 };
-
 // add eventListeners to elements
 hamburger.addEventListener('click', toggleNav);
 listItems.forEach(item => item.addEventListener('click', handleListItemClick));
